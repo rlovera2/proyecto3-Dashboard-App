@@ -1,0 +1,151 @@
+
+/*****************************************************/
+/***************** Declarando Clases *****************/
+/*****************************************************/
+
+
+.margenes{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+}
+
+.texto{
+font-size: medium;
+font-style: normal;
+font-family: Arial, Helvetica, sans-serif;
+color:black;
+
+
+}   
+
+.contenedor_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 5, 66);
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: white;
+    height: 100px;     
+}
+
+
+.titulo_columnas_tabla{
+
+    background-color: blue;
+    border: 2px solid;
+    border-color: grey;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size:medium;
+    color: white;
+}
+
+
+.registros{
+
+    background-color: rgb(226, 234, 255);
+    text-align: center;
+    border: 2px solid; 
+    border-collapse: collapse;
+}
+
+
+.contenedor_footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(117, 117, 119);
+            font-size:medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style:normal;
+            color: white;
+            height: 80px;
+                 
+}
+
+.contenedor_principal{
+    display: grid;
+    grid-template-columns: 50px 50px ;
+    gap: 10px;
+    background-color: rgb(5, 5, 66);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: white;
+    align-items:center ;
+    align-content: center;
+    height: 100px;
+
+}
+
+/***********************************************/
+/******************* Media Queries *************/
+/***********************************************/
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (max-width: 1400px) {
+    .menu {
+        background-color: rgb(5, 5, 66);
+    }
+   
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+    .menu {
+        background-color: rgb(24, 3, 50);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 320px) {
+
+    main{
+
+        display: flex;
+        flex-flow:wrap;
+        justify-content:space-evenly;
+    }
+}
