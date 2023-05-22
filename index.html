@@ -12,7 +12,28 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous" />
       <link rel="stylesheet" href="./src/css/mis_Estilos.css" />
-    
+
+      <script >
+
+        //***** CAMBIANDO EL COLOR DEL REGISTRO CUANDO SE ESTA SOBRE EL REGISTRO *******//
+
+        const cambiar_color_over = (id,nombre,calificacion) => {
+            //fila.style.backgroundColor ="Pink"; 
+            document.getElementById(id).style.backgroundColor ="Pink";
+            document.getElementById(nombre).style.backgroundColor ="Pink";
+            document.getElementById(calificacion).style.backgroundColor ="Pink";
+       }
+       
+       //***** CAMBIANDO EL COLOR DEL REGISTRO CUANDO SE ESTA FUERA DEL REGISTRO *******//
+
+       const cambiar_color_out = (id,nombre,calificacion) => {
+             //fila.style.backgroundColor ="rgb(226, 234, 255)";
+            document.getElementById(id).style.backgroundColor ="rgb(226, 234, 255)";
+            document.getElementById(nombre).style.backgroundColor ="rgb(226, 234, 255)";
+            document.getElementById(calificacion).style.backgroundColor ="rgb(226, 234, 255)"; 
+           
+       }
+     </script>
       
   </head>
   <body>

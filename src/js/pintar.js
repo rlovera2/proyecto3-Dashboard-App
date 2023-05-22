@@ -34,25 +34,24 @@ console.log(nombres);
     console.log(notasIds[i]);
 
     cuerpoTabla.innerHTML +=`<tr>
-                             <th scope="row" class="registros" onmouseover="cambiar_color_over('registro')"> ${notasIds[i]}</th>
-                             <td class="registros"> ${notasNombres[i]} </td>
-                             <td class="registros"> ${notasCalificaciones[i]} </td>
+                             <th scope="row"  
+                             id="registroId${i}" 
+                             onmouseover="cambiar_color_over('registroId${i}','registroNombre${i}','registroCalificacion${i}')"  
+                             onmouseout="cambiar_color_out('registroId${i}','registroNombre${i}','registroCalificacion${i}')" 
+                             class="registros"> ${notasIds[i]}</th>
+
+                             <td class="registros" 
+                             id="registroNombre${i}" 
+                             onmouseover="cambiar_color_over('registroId${i}','registroNombre${i}','registroCalificacion${i}')"  
+                             onmouseout="cambiar_color_out('registroId${i}','registroNombre${i}','registroCalificacion${i}')"
+                             > ${notasNombres[i]} </td>
+
+                             <td class="registros"id="registroCalificacion${i}" 
+                             onmouseover="cambiar_color_over('registroId${i}','registroNombre${i}','registroCalificacion${i}')"   
+                             onmouseout="cambiar_color_out('registroId${i}','registroNombre${i}','registroCalificacion${i}')" 
+                             > ${notasCalificaciones[i]} </td>
                              <tr>`;
  }
-}
-
- const cambiar_color_over = (fila) => {
-     //fila.style.backgroundColor ="Pink"; 
- document.getElementById("registro").style.backgroundColor ="Pink";
-   
-   //fila.bgColor ="Pink";
-   fila.style.cursor="hand";
-};
-
-
-const cambiar_color_out = (fila) => {
-  fila.style.backgroundColor ="rgb(226, 234, 255)"; 
-
 };
 
 
