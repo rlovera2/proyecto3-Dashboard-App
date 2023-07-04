@@ -14,7 +14,7 @@ const datosApi[notasAlumnos];
 
 const consumirApi = async () => {
 
-const resp = await axios.get(datosApi);
+const resp = await axios.get(datosApi[0]);
   
   //const resp = await axios.get("https://ucamp-api.onrender.com/api/v1/scores");
     
