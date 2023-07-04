@@ -3,7 +3,7 @@ import { imprimirValores, pintarGrafica } from "./pintar.js";
 
 notasAlumnos ={
     id:1,
-    nombre: Pedro,
+    nombre: "Pedro",
     calificación: 15
 
 };
