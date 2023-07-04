@@ -10,7 +10,7 @@ notasAlumnos ={
 
 
 
-const datosApi[notasAlumnos];
+const datosApi[0]=notasAlumnos;
 
 const consumirApi = async () => {
 
