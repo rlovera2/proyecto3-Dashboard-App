@@ -6,7 +6,6 @@ const cuerpoTabla = document.getElementById("cuerpoTabla");
 //*****************************************************/
 
 const imprimirValores = (datos) => {
-  
   const ids = datos.map((dato) => {
     return dato.id;
   });
@@ -19,21 +18,20 @@ const imprimirValores = (datos) => {
     return dato.calificacion;
   });
 
+  console.log(nombres);
 
-console.log(nombres);
+  const notasIds = [];
+  const notasNombres = [];
+  const notasCalificaciones = [];
 
- const notasIds = [];
- const notasNombres = [];
- const notasCalificaciones = [];
- 
- for ( let i = 0; i < datos.length; i++ ) {
-    notasIds[i]=ids[i];
-    notasNombres[i]=nombres[i];
-    notasCalificaciones[i]=calificaciones[i];
+  for (let i = 0; i < datos.length; i++) {
+    notasIds[i] = ids[i];
+    notasNombres[i] = nombres[i];
+    notasCalificaciones[i] = calificaciones[i];
 
     console.log(notasIds[i]);
 
-    cuerpoTabla.innerHTML +=`<tr>
+    cuerpoTabla.innerHTML += `<tr>
                              <th scope="row"  
                              id="registroId${i}" 
                              onmouseover="cambiar_color_over('registroId${i}','registroNombre${i}','registroCalificacion${i}')"  
@@ -51,9 +49,8 @@ console.log(nombres);
                              onmouseout="cambiar_color_out('registroId${i}','registroNombre${i}','registroCalificacion${i}')" 
                              > ${notasCalificaciones[i]} </td>
                              <tr>`;
- }
+  }
 };
-
 
 //*****************************************************/
 //***************** DIBUJANDO EL GRAFICO **************/
@@ -74,7 +71,7 @@ const pintarGrafica = (datos) => {
       labels: nombres,
       datasets: [
         {
-          label: "# of Votes",
+          label: "# NOTAS",
           data: calificaciones,
           borderWidth: 1,
         },
@@ -90,7 +87,6 @@ const pintarGrafica = (datos) => {
   });
 };
 
-export { pintarGrafica,imprimirValores };
-
+export { pintarGrafica, imprimirValores };
 
 window.addEventListener("load", imprimirValores);
