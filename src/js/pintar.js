@@ -71,7 +71,7 @@ const pintarGrafica = (datos) => {
       labels: nombres,
       datasets: [
         {
-          label: "# NOTAS",
+          label: "# NOTA",
           data: calificaciones,
           borderWidth: 1,
         },
