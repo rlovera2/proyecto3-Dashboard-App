@@ -1,5 +1,6 @@
 const ctx = document.getElementById("myChart");
 const cuerpoTabla = document.getElementById("cuerpoTabla");
+//const tipoGrafico = document.getElementById("tipoGrafico");
 
 //*****************************************************/
 //***************** IMPRIMIENDO VALORES ***************/
@@ -65,8 +66,17 @@ const pintarGrafica = (datos) => {
     return dato.nombre;
   });
 
+  // const loadTipoGrafico = () => {
+  //   let xtipo = document.getElementById("tipoGrafico").value;
+  //   return xtipo;
+  // };
+
+  let strTipoGrafico = document.getElementById("tipoGrafico").value;
+  //alert(strTipoGrafico);
+
   new Chart(ctx, {
-    type: "bar",
+    // tipo grafico { bar, pie, line }
+    type: `${strTipoGrafico}`,
     data: {
       labels: nombres,
       datasets: [

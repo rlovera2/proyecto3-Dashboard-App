@@ -1,1 +1,0 @@
-import { consumirApi } from "./llamadasApis.js";

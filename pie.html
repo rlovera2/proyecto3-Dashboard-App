@@ -63,9 +63,9 @@
     <br /><br /><b>Tipo de grafico:</b> 
     <!-- <select id="tipoGrafico" name="tipo" onChange="pintarGrafica()"> -->
     <select id="tipoGrafico" name="tipo" onChange="location = this.value + '.html';">
-      <option value="bar" selected>bar</option>
+      <option value="bar">bar</option>
       <option value="line">line</option>
-      <option value="pie">pie</option>
+      <option value="pie" selected>pie</option>
     </select>  
     <br /><br />
           <canvas id="myChart"></canvas>
@@ -75,12 +75,12 @@
     </div>
 
     <footer class="contenedor_footer">
-     
+      <span>
       Para cualquier falla en el sistema puede ponerse 
       en contacto con el adminisrador del sistema.
        <br>
        <a href="#">admincrud@sistemacrud.com</a>
-      
+       </span>
       
       </footer>
     <script
